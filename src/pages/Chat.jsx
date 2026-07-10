@@ -10,7 +10,7 @@ function Chat(){
        
             </div>
             <div className="ai">
-  {!showResult ? <span>Loading..</span> : <span>{showResult}</span>}
+  {!showResult ? <span>Loading...</span> : <span>{showResult}</span>}
 </div>
         </div>
     )
