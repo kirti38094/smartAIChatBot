@@ -1,0 +1,199 @@
+.home{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+}
+nav{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.hero{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  gap: 20px;
+  padding: 10px 20px;
+}
+#tag{
+  font-size: 2vmax;
+}
+.logo{
+  cursor: pointer;
+}
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.upImg,.chatImg{
+  padding: 5px 10px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.upImg svg{
+  width: 15px;
+  height: 15px;
+  color: rgb(7, 240, 11);
+}
+
+.chatImg svg{
+  width: 15px;
+  height: 15px;
+  color: rgb(240, 155, 7);
+}
+.upImg:hover,.chatImg:hover{
+  background-color: rgb(240, 248, 255, 0.108);
+}
+.input-box{
+  width: 100%;
+  height: calc(100vh - 80px - 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+#add,#submit{
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  background-color: rgb(11, 16, 17);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#add svg{
+  width: 25px;
+  height: 25px;
+}
+  #submit svg{
+  width:20px;
+  height: 20px;
+}
+
+form input{
+  max-width: 60%;
+  width: calc(100% - 120px);
+  height: 40px;
+  background-color: rgb(11, 16, 17);
+  border:2px solid rgba(255, 255, 255, 0.25) ;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 20px;
+}
+.chat-page{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: start; 
+  align-items: start;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px;
+  overflow-y: auto;
+}
+.user,.ai{
+  width:90%;
+  padding: 20px 30px;
+  color: white;
+   background-color: rgb(11, 16, 17);
+  border:2px solid rgba(255, 255, 255, 0.25) ;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap:20px;
+
+
+}
+.user img{
+  width: 200px;
+    border-radius: 20px;
+}
+.ai img{
+  width: 200px;
+    border-radius: 20px;
+}
+.pop-up{
+  width:140px;
+  height:50px;
+  position: absolute;
+  bottom:70px;
+  left:10%;
+  background-color: rgb(11, 16, 17);
+  border:2px solid rgba(255, 255, 255, 0.175) ;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  
+}
+.select-up{
+color:white;
+font-size: 10px;
+width:100%;
+padding: 6px;
+display: flex;
+align-items: center;
+justify-content: start;
+gap: 10px;
+border-radius: 20px;
+cursor: pointer;
+}
+.select-up:hover{
+  background-color: rgb(240, 248, 255, 0.1);
+}
+.select-up svg{
+  color: rgb(7, 240, 11);
+  width: 15px;
+  height: 15px;
+}
+.select-gen svg{
+ color: rgb(7, 236, 240);
+ width: 15px;
+  height: 15px;
+}
+#im{
+  height:100px;
+  border-radius: 20px;
+  position: absolute;
+  bottom:80px;
+  left:12%;
+  box-shadow: 2px 2px 10px rgb(1, 1, 30);
+}
+@media (max-width:500px){
+  #tag{
+    font-size: 20px;
+  }
+}
